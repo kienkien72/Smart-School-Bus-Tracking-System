@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Nguyễn Văn Admin",
+      "email": "admin@ssb.vn",
+      "password": "admin123",
+      "role": "admin",
+      "phone": "0901234567",
+      "avatar": "https://ui-avatars.com/api/?name=Admin&background=3b82f6&color=fff"
+    },
+    {
+      "id": 2,
+      "name": "Trần Văn Tài",
+      "email": "driver@ssb.vn",
+      "password": "driver123",
+      "role": "driver",
+      "phone": "0912345678",
+      "avatar": "https://ui-avatars.com/api/?name=Tai&background=22c55e&color=fff",
+      "busAssigned": "29A-12345",
+      "experience": "8 năm"
+    },
+    {
+      "id": 3,
+      "name": "Lê Thị Hương",
+      "email": "parent@ssb.vn",
+      "password": "parent123",
+      "role": "parent",
+      "phone": "0923456789",
+      "avatar": "https://ui-avatars.com/api/?name=Huong&background=a855f7&color=fff",
+      "studentName": "Nguyễn Văn An",
+      "studentClass": "Lớp 5A"
+    }
+  ]
+}

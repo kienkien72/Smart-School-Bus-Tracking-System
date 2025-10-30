@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "licensePlate": "29A-12345",
+    "capacity": 45,
+    "model": "Hyundai County",
+    "year": 2020,
+    "driverId": 1,
+    "driverName": "Nguyễn Văn Tài",
+    "routeId": 1,
+    "status": "active",
+    "lastMaintenance": "2025-09-15",
+    "nextMaintenance": "2025-12-15",
+    "currentLocation": {
+      "lat": 10.7756,
+      "lng": 106.7019,
+      "speed": 35,
+      "heading": 180,
+      "timestamp": "2025-10-19T07:03:00Z"
+    }
+  },
+  {
+    "id": 2,
+    "licensePlate": "30B-67890",
+    "capacity": 50,
+    "model": "Thaco Universe",
+    "year": 2021,
+    "driverId": 2,
+    "driverName": "Trần Văn Bình",
+    "routeId": 2,
+    "status": "active",
+    "lastMaintenance": "2025-08-20",
+    "nextMaintenance": "2025-11-20",
+    "currentLocation": {
+      "lat": 10.7868,
+      "lng": 106.6900,
+      "speed": 40,
+      "heading": 90,
+      "timestamp": "2025-10-19T07:02:00Z"
+    }
+  },
+  {
+    "id": 3,
+    "licensePlate": "31C-11111",
+    "capacity": 40,
+    "model": "Hyundai Solati",
+    "year": 2019,
+    "driverId": 3,
+    "driverName": "Lê Văn Cường",
+    "routeId": 3,
+    "status": "maintenance",
+    "lastMaintenance": "2025-10-01",
+    "nextMaintenance": "2026-01-01",
+    "currentLocation": {
+      "lat": 10.7769,
+      "lng": 106.7009,
+      "speed": 0,
+      "heading": 0,
+      "timestamp": "2025-10-19T06:00:00Z"
+    }
+  }
+]

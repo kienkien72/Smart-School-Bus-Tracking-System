@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "Nguyễn Văn An",
+    "class": "Lớp 5A",
+    "parentName": "Nguyễn Văn Anh",
+    "parentPhone": "0901234567",
+    "pickupPoint": {
+      "address": "123 Đường Lê Lợi, Quận 1, TP.HCM",
+      "lat": 10.7756,
+      "lng": 106.7019
+    },
+    "routeId": 1,
+    "status": "active",
+    "pickupTime": "07:05",
+    "dropoffTime": "14:10"
+  },
+  {
+    "id": 2,
+    "name": "Trần Thị Bình",
+    "class": "Lớp 4B",
+    "parentName": "Trần Văn Bảo",
+    "parentPhone": "0912345678",
+    "pickupPoint": {
+      "address": "456 Đường Nguyễn Huệ, Quận 1, TP.HCM",
+      "lat": 10.7735,
+      "lng": 106.7012
+    },
+    "routeId": 1,
+    "status": "active",
+    "pickupTime": "07:10",
+    "dropoffTime": "14:15"
+  },
+  {
+    "id": 3,
+    "name": "Lê Minh Cường",
+    "class": "Lớp 6C",
+    "parentName": "Lê Văn Công",
+    "parentPhone": "0923456789",
+    "pickupPoint": {
+      "address": "789 Đường Hai Bà Trưng, Quận 3, TP.HCM",
+      "lat": 10.7868,
+      "lng": 106.6900
+    },
+    "routeId": 2,
+    "status": "active",
+    "pickupTime": "07:00",
+    "dropoffTime": "14:05"
+  },
+  {
+    "id": 4,
+    "name": "Phạm Thu Hà",
+    "class": "Lớp 5A",
+    "parentName": "Phạm Văn Hải",
+    "parentPhone": "0934567890",
+    "pickupPoint": {
+      "address": "321 Đường Võ Văn Tần, Quận 3, TP.HCM",
+      "lat": 10.7823,
+      "lng": 106.6934
+    },
+    "routeId": 2,
+    "status": "active",
+    "pickupTime": "07:08",
+    "dropoffTime": "14:12"
+  },
+  {
+    "id": 5,
+    "name": "Hoàng Minh Đức",
+    "class": "Lớp 3A",
+    "parentName": "Hoàng Văn Dũng",
+    "parentPhone": "0945678901",
+    "pickupPoint": {
+      "address": "654 Đường Trần Hưng Đạo, Quận 5, TP.HCM",
+      "lat": 10.7542,
+      "lng": 106.6779
+    },
+    "routeId": 3,
+    "status": "active",
+    "pickupTime": "07:15",
+    "dropoffTime": "14:20"
+  },
+  {
+    "id": 6,
+    "name": "Võ Thị Mai",
+    "class": "Lớp 4A",
+    "parentName": "Võ Văn Minh",
+    "parentPhone": "0956789012",
+    "pickupPoint": {
+      "address": "147 Đường Cách Mạng Tháng 8, Quận 10, TP.HCM",
+      "lat": 10.7722,
+      "lng": 106.6656
+    },
+    "routeId": 3,
+    "status": "active",
+    "pickupTime": "07:20",
+    "dropoffTime": "14:25"
+  },
+  {
+    "id": 7,
+    "name": "Đỗ Văn Khoa",
+    "class": "Lớp 5B",
+    "parentName": "Đỗ Thị Kim",
+    "parentPhone": "0967890123",
+    "pickupPoint": {
+      "address": "258 Đường Lý Thường Kiệt, Quận 11, TP.HCM",
+      "lat": 10.7656,
+      "lng": 106.6512
+    },
+    "routeId": 1,
+    "status": "active",
+    "pickupTime": "07:15",
+    "dropoffTime": "14:18"
+  },
+  {
+    "id": 8,
+    "name": "Bùi Thị Lan",
+    "class": "Lớp 6A",
+    "parentName": "Bùi Văn Long",
+    "parentPhone": "0978901234",
+    "pickupPoint": {
+      "address": "369 Đường Điện Biên Phủ, Quận 3, TP.HCM",
+      "lat": 10.7890,
+      "lng": 106.6945
+    },
+    "routeId": 2,
+    "status": "active",
+    "pickupTime": "07:12",
+    "dropoffTime": "14:16"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "Nguyễn Văn Tài",
+    "phone": "0901234567",
+    "licenseNumber": "B2-123456",
+    "experience": "10 năm",
+    "busAssigned": "29A-12345",
+    "routeAssigned": 1,
+    "status": "active",
+    "avatar": "https://ui-avatars.com/api/?name=Nguyen+Van+Tai&background=0D8ABC&color=fff"
+  },
+  {
+    "id": 2,
+    "name": "Trần Văn Bình",
+    "phone": "0912345678",
+    "licenseNumber": "B2-234567",
+    "experience": "8 năm",
+    "busAssigned": "30B-67890",
+    "routeAssigned": 2,
+    "status": "active",
+    "avatar": "https://ui-avatars.com/api/?name=Tran+Van+Binh&background=22C55E&color=fff"
+  },
+  {
+    "id": 3,
+    "name": "Lê Văn Cường",
+    "phone": "0923456789",
+    "licenseNumber": "B2-345678",
+    "experience": "5 năm",
+    "busAssigned": "31C-11111",
+    "routeAssigned": 3,
+    "status": "active",
+    "avatar": "https://ui-avatars.com/api/?name=Le+Van+Cuong&background=EAB308&color=fff"
+  },
+  {
+    "id": 4,
+    "name": "Phạm Văn Dũng",
+    "phone": "0934567890",
+    "licenseNumber": "B2-456789",
+    "experience": "12 năm",
+    "busAssigned": null,
+    "routeAssigned": null,
+    "status": "inactive",
+    "avatar": "https://ui-avatars.com/api/?name=Pham+Van+Dung&background=6366F1&color=fff"
+  }
+]
