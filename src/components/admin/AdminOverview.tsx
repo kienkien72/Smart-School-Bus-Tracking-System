@@ -1,0 +1,156 @@
+import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
+import { Bus, Users, Route as RouteIcon, MapPin } from 'lucide-react';
+
+export function AdminOverview() {
+  const stats = [
+    { label: 'Tổng số học sinh', value: '245', icon: Users, color: 'bg-gradient-to-br from-blue-500 to-blue-600' },
+    { label: 'Tổng số xe buýt', value: '12', icon: Bus, color: 'bg-gradient-to-br from-green-500 to-green-600' },
+    { label: 'Tuyến đường', value: '8', icon: RouteIcon, color: 'bg-gradient-to-br from-purple-500 to-purple-600' },
+    { label: 'Xe đang hoạt động', value: '9', icon: MapPin, color: 'bg-gradient-to-br from-orange-500 to-orange-600' },
+  ];
+
+  return (
+    <>
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mb-6">
+        {stats.map((stat, index) => {
+          const Icon = stat.icon;
+          return (
+            <Card key={index} className="hover:shadow-xl transition-all hover:scale-105 border-0 shadow-md">
+              <CardHeader className="flex flex-row items-center justify-between pb-2">
+                <CardTitle className="text-sm text-gray-600">{stat.label}</CardTitle>
+                <div className={`${stat.color} p-3 rounded-xl shadow-lg`}>
+                  <Icon className="w-5 h-5 text-white" />
+                </div>
+              </CardHeader>
+              <CardContent>
+                <div className="text-3xl text-gray-900">{stat.value}</div>
+              </CardContent>
+            </Card>
+          );
+        })}
+      </div>
+
+      <div className="grid gap-6 mb-6">
+        <Card>
+          <CardHeader>
+            <CardTitle>Tổng quan hoạt động hôm nay</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="grid gap-4 md:grid-cols-3">
+              <div className="p-4 bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="bg-blue-500 p-2 rounded-lg">
+                    <Bus className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-600">Chuyến xe hoàn thành</p>
+                    <p className="text-2xl text-gray-900">24</p>
+                  </div>
+                </div>
+                <div className="text-xs text-gray-500">Sáng: 12 | Chiều: 12</div>
+              </div>
+              
+              <div className="p-4 bg-gradient-to-br from-green-50 to-green-100 rounded-lg">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="bg-green-500 p-2 rounded-lg">
+                    <Users className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-600">Học sinh đã đón</p>
+                    <p className="text-2xl text-gray-900">238</p>
+                  </div>
+                </div>
+                <div className="text-xs text-gray-500">97% đúng giờ</div>
+              </div>
+              
+              <div className="p-4 bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="bg-purple-500 p-2 rounded-lg">
+                    <RouteIcon className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-600">Tổng quãng đường</p>
+                    <p className="text-2xl text-gray-900">356</p>
+                  </div>
+                </div>
+                <div className="text-xs text-gray-500">Km hôm nay</div>
+              </div>
+            </div>
+
+            <div className="mt-6 p-4 bg-gray-50 rounded-lg">
+              <h4 className="text-sm text-gray-900 mb-4">Trạng thái xe buýt</h4>
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                    <span className="text-sm text-gray-600">Đang hoạt động</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="flex-1 w-32 h-2 bg-gray-200 rounded-full overflow-hidden">
+                      <div className="h-full bg-green-500 rounded-full" style={{width: '75%'}}></div>
+                    </div>
+                    <span className="text-sm text-gray-900">9/12</span>
+                  </div>
+                </div>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <span className="text-sm text-gray-600">Đang bảo trì</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="flex-1 w-32 h-2 bg-gray-200 rounded-full overflow-hidden">
+                      <div className="h-full bg-yellow-500 rounded-full" style={{width: '16.67%'}}></div>
+                    </div>
+                    <span className="text-sm text-gray-900">2/12</span>
+                  </div>
+                </div>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <span className="text-sm text-gray-600">Dừng hoạt động</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="flex-1 w-32 h-2 bg-gray-200 rounded-full overflow-hidden">
+                      <div className="h-full bg-red-500 rounded-full" style={{width: '8.33%'}}></div>
+                    </div>
+                    <span className="text-sm text-gray-900">1/12</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+
+      </div>
+
+      <Card>
+          <CardHeader>
+            <CardTitle>Hoạt động gần đây</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-3">
+              {[
+                { action: 'Thêm học sinh mới', name: 'Nguyễn Văn A - Lớp 5A', time: '5 phút trước', icon: '👨‍🎓', color: 'bg-blue-100' },
+                { action: 'Cập nhật lịch trình', name: 'Xe buýt 29A-12345', time: '15 phút trước', icon: '🚌', color: 'bg-green-100' },
+                { action: 'Hoàn thành tuyến', name: 'Tài xế Trần Văn Bình', time: '1 giờ trước', icon: '✓', color: 'bg-purple-100' },
+                { action: 'Phân công xe mới', name: 'Tài xế Lê Văn Cường', time: '2 giờ trước', icon: '🔄', color: 'bg-orange-100' },
+                { action: 'Bảo trì hoàn thành', name: 'Xe buýt 30B-67890', time: '3 giờ trước', icon: '🔧', color: 'bg-gray-100' },
+              ].map((activity, index) => (
+                <div key={index} className="flex items-center gap-3 p-3 hover:bg-gray-50 rounded-lg transition-colors">
+                  <div className={`${activity.color} w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0`}>
+                    <span className="text-lg">{activity.icon}</span>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-sm text-gray-900">{activity.action}</p>
+                    <p className="text-xs text-gray-500 truncate">{activity.name}</p>
+                  </div>
+                  <span className="text-xs text-gray-400 flex-shrink-0">{activity.time}</span>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+    </>
+  );
+}
